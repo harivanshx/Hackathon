@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Food Tracker</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header class="bg-primary text-white">
+        <div class="container">
+            <h1 class="display-4">Student Food Tracker</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Track Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Budget</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<
+    <main class="container mt-4">
+        <section class="food-entry">
+            <h2>Log Your Meal</h2>
+            <form>
+                <div class="form-group">
+                    <label for="food-name">Food Name:</label>
+                    <input type="text" class="form-control" id="food-name" name="food-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="calories">Calories:</label>
+                    <input type="number" class="form-control" id="calories" name="calories" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="protein">Protein (g):</label>
+                    <input type="number" class="form-control" id="protein" name="protein" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="carbs">Carbohydrates (g):</label>
+                    <input type="number" class="form-control" id="carbs" name="carbs" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fats">Fats (g):</label>
+                    <input type="number" class="form-control" id="fats" name="fats" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Add Entry</button>
+            </form>
+        </section>
+
+        <section class="food-list">
+            <h2>Meal Log</h2>
+            <ul class="list-group">
+                <!-- Example entry with a placeholder image -->
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="placeholder.jpg" alt="Food Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-9">
+                            <span class="food-name">Pizza</span>
+                            <span class="calories">300 cal</span>
+                            <span class="protein">12g</span>
+                            <span class="carbs">30g</span>
+                            <span class="fats">15g</span>
+                        </div>
+                    </div>
+                </li>
+                <!-- More entries can be added here -->
+            </ul>
+        </section>
+
+        <section class="budget mt-4">
+            <h2>Budget Tracker</h2>
+            <p>Your Budget: $<span id="budget">500</span></p>
+            <p>Remaining Budget: $<span id="remaining-budget">500</span></p>
+        </section>
+    </main>
+
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+<script>
+    // Sample meal data (you can replace this with your database interactions)
+    const meals = [
+        { name: "Pizza", calories: 300, protein: 12, carbs: 30, fats: 15 },
+        { name: "Salad", calories: 150, protein: 5, carbs: 10, fats: 8 },
+    ];
+
+    // Function to add a new meal entry
+    function addMeal() {
+        const foodName = document.getElementById("food-name").value;
+        const calories = parseFloat(document.getElementById("calories").value);
+        const protein = parseFloat(document.getElementById("protein").value);
+        const carbs = parseFloat(document.getElementById("carbs").value);
+        const fats = parseFloat(document.getElementById("fats").value);
+
+        // Add the new entry to the meal log
+        meals.push({ name: foodName, calories, protein, carbs, fats });
+
+        // Clear input fields
+        document.getElementById("food-name").value = "";
+        document.getElementById("calories").value = "";
+        document.getElementById("protein").value = "";
+        document.getElementById("carbs").value = "";
+        document.getElementById("fats").value = "";
+
+        // Refresh the meal log
+        displayMeals();
+    }
+
+    // Function to display meal entries
+    function displayMeals() {
+        const mealList = document.querySelector(".food-list ul");
+        mealList.innerHTML = "";
+
+        meals.forEach((meal) => {
+            const listItem = document.createElement("li");
+            listItem.innerHTML = `
+                <span class="food-name">${meal.name}</span>
+                <span class="calories">${meal.calories} cal</span>
+                <span class="protein">${meal.protein}g</span>
+                <span class="carbs">${meal.carbs}g</span>
+                <span class="fats">${meal.fats}g</span>
+            `;
+            mealList.appendChild(listItem);
+        });
+    }
+
+    // Call displayMeals to initially populate the meal log
+    displayMeals();
+</script>
+</html>

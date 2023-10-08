@@ -1,0 +1,57 @@
+
+#dashboard {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 0.5s ease-in-out;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.dashboard-widget {
+    flex: 1;
+    min-width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dashboard-widget:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    animation: rotateIn 0.5s ease-in-out;
+}
+
+
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-10deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}

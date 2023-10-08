@@ -1,0 +1,114 @@
+
+
+#budget {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#budget h2 {
+    color: #a59191;
+}
+
+#budget p {
+    color: #9f6666;
+    margin-bottom: 20px;
+}
+
+/* Style for budget forms and tables */
+.budget-form {
+    margin-bottom: 20px;
+}
+
+.budget-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.budget-table th,
+.budget-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#budget {
+    margin-top: 50px;
+  }
+  
+  #budget h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .budgeting-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+  .budgeting-card {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .budgeting-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .budgeting-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .budgeting-card label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .budgeting-card input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .budgeting-card input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .budgeting-card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .budgeting-card table thead th {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .budgeting-card table tbody td {
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+
+

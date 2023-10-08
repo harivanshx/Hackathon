@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eating Healthy</title>
+  <link rel="stylesheet" href="styles/eat.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1> <img src="download.png" alt="STUDify Logo" ></h1>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashbard</a></li>
+            <li><a href="foodlog.html">Food Log</a></li>
+            <li><a href="budget.html">Budgeting System</a></li>
+            <li><a href="wifi.html">WiFi Map</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            
+            <li><a href="schedule.html">Task Lists</a></li>
+            <li><a href="workout.html">Workout Log</a></li>
+            <li><a href="eatinghealthy.html">Eating Healthy</a></li>
+            <li><a href="expenses.html">Expenses</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <main>
+    <br>
+    <section id="food-log">
+      <h2>Food Log</h2>
+      <br>
+      <form action="#">
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <label for="meal">Meal:</label>
+        <select id="meal">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="snack">Snack</option>
+        </select>
+        <label for="food">Food:</label>
+        <input type="text" id="food">
+        <label for="calories">Calories:</label>
+        <input type="number" id="calories">
+        <input type="submit" value="Add">
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Meal</th>
+            <th>Food</th>
+            <th>Calories</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023-03-08</td>
+            <td>Breakfast</td>
+            <td>Oatmeal</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>2023-03-08</td>
+            <td>Lunch</td>
+            <td>Salad</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>2023-03-08</td>
+            <td>Dinner</td>
+            <td>Chicken</td>
+            <td>400</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>

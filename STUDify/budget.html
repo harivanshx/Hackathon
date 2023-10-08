@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/budget.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>STUDify - Budgeting</title>
+</head>
+<body>
+    
+    <header>
+        <h1>STUDify</h1>
+   
+        <nav>
+            <ul>
+               
+                <li><a href="dashboard.html">Dashbard</a></li>
+                <li><a href="foodlog.html">Food Log</a></li>
+                <li><a href="budget.html">Budgeting System</a></li>
+                <li><a href="wifi.html">WiFi Map</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="tasks.html">Task Lists</a></li>
+                <li><a href="workout.html">Workout Log</a></li>
+                <li><a href="eatinghealthy.html">Eating Healthy</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="budget">
+            <h2>Budgeting System</h2>
+            <p>Track your expenses and manage your budget effectively as a student.</p>
+         
+            
+             
+            <section id="budget">
+                <h2>Budgeting System</h2>
+                <div class="budgeting-content">
+                   
+                    <div class="budgeting-card">
+                        <h3>Create a Budget</h3>
+                        <form action="/budget/create" method="post">
+                            <label for="budget-name">Budget Name:</label>
+                            <input type="text" name="budget-name" id="budget-name" required>
+            
+                            <label for="budget-amount">Budget Amount:</label>
+                            <input type="number" name="budget-amount" id="budget-amount" required>
+            
+                            <label for="budget-start-date">Start Date:</label>
+                            <input type="date" name="budget-start-date" id="budget-start-date" required>
+            
+                            <label for="budget-end-date">End Date:</label>
+                            <input type="date" name="budget-end-date" id="budget-end-date" required>
+            
+                            <input type="submit" value="Create Budget">
+                        </form>
+                    </div>
+            
+                    
+                    <div class="budgeting-card">
+                        <h3>View Budgets</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Budget Name</th>
+                                    <th>Budget Amount</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+            
+
+                    <div class="budgeting-card">
+                        <h3>Budgeting Tips</h3>
+                        <ul>
+                            <li>Set realistic goals.</li>
+                            <li>Track your spending.</li>
+                            <li>Create a budget and stick to it.</li>
+                            <li>Find ways to save money.</li>
+                            <li>Invest your money.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+   
+    <footer>
+        <p>&copy; 2023 STUDify</p>
+    </footer>
+</body>
+</html>

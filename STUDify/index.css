@@ -1,0 +1,241 @@
+.image-5-icon,
+.image-6-icon {
+  position: absolute;
+  object-fit: cover;
+}
+.image-5-icon {
+  top: 198px;
+  left: 217px;
+  width: 1887px;
+  height: 1003px;
+  display: none;
+}
+.image-6-icon {
+  top: 177px;
+  left: 20px;
+  width: 1635px;
+  height: 1482px;
+}
+.background-child {
+  position: absolute;
+  top: 1201px;
+  left: 1460px;
+  background-color: rgba(21, 21, 21, 0.93);
+  box-shadow: 50px 0 81px 36px #151515;
+  width: 1440px;
+  height: 1024px;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+.background {
+  position: absolute;
+  top: -177px;
+  left: -20px;
+  width: 1635px;
+  height: 1482px;
+}
+.studify,
+.studify-is-the {
+  position: absolute;
+  left: 103px;
+  display: inline-block;
+}
+.studify {
+  top: 150px;
+  line-height: 61px;
+  font-weight: 900;
+  width: 759px;
+  height: 58px;
+}
+.studify-is-the {
+  top: 240px;
+  font-size: var(--font-size-4xl);
+  width: 1308px;
+}
+.select-character-child {
+  position: absolute;
+  top: 361px;
+  left: 92px;
+  border-radius: var(--br-3xs);
+  width: 1256px;
+  height: 660px;
+}
+.c4434021-a35b-4cd4-9ad0-558fd9-icon {
+  position: absolute;
+  top: 569px;
+  left: 549px;
+  width: 348px;
+  height: 364px;
+  object-fit: cover;
+}
+.cbd3f2-8ecf-4363-8a6f-15092809-icon,
+.d03-2277-4c95-b35f-b7c99af610f-icon {
+  position: absolute;
+  top: 569px;
+  left: 948px;
+  width: 347px;
+  height: 364px;
+  object-fit: cover;
+}
+.d03-2277-4c95-b35f-b7c99af610f-icon {
+  left: 151px;
+  width: 349px;
+  height: 380px;
+}
+.do-deep-work,
+.stay-productive {
+  position: absolute;
+  line-height: 29px;
+}
+.stay-productive {
+  top: calc(50% - 26.5px);
+  left: calc(50% - 149px);
+  font-weight: 900;
+}
+.do-deep-work {
+  top: 49px;
+  left: 25px;
+  font-size: var(--font-size-mid);
+}
+.stay-productive-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+  background-color: var(--color-gray-100);
+  width: 348px;
+  height: 103px;
+}
+.eat-healthy,
+.stay-healthy {
+  position: absolute;
+  line-height: 29px;
+  display: inline-block;
+}
+.stay-healthy {
+  top: calc(50% - 26.5px);
+  left: calc(50% - 149.5px);
+  font-weight: 900;
+  width: 247px;
+}
+.eat-healthy {
+  top: 49px;
+  left: 25.07px;
+  font-size: var(--font-size-mid);
+  width: 130.37px;
+}
+.stay-healthy-parent {
+  position: absolute;
+  top: 0;
+  left: 398px;
+  border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+  background-color: var(--color-gray-100);
+  width: 349px;
+  height: 103px;
+}
+.maintain-your-life {
+  position: absolute;
+  top: 47px;
+  left: calc(50% - 149px);
+  font-size: var(--font-size-mid);
+  line-height: 29px;
+  display: inline-block;
+  width: 213px;
+}
+.personagens,
+.rectangle-parent {
+  position: absolute;
+  top: 2px;
+  left: 797px;
+  width: 348px;
+  height: 103px;
+}
+.personagens {
+  top: 855px;
+  left: 151px;
+  width: 1145px;
+  height: 105px;
+  font-size: var(--font-size-7xl);
+}
+.menu-child {
+  position: absolute;
+  top: 45px;
+  left: 1058px;
+  background-color: #d9d9d9;
+  width: 1440px;
+  height: 150px;
+  display: none;
+}
+.signup {
+  position: absolute;
+  top: 0;
+  left: 110px;
+  line-height: 61px;
+  font-weight: 900;
+}
+.home,
+.menu,
+.signup-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home {
+  line-height: 61px;
+  font-weight: 900;
+}
+.menu,
+.signup-parent {
+  width: 186px;
+  height: 61px;
+}
+.menu {
+  top: 47px;
+  left: 1058px;
+  font-size: var(--font-size-xl);
+}
+.select-character-item {
+  position: absolute;
+  top: 36px;
+  left: 103px;
+  width: 231px;
+  height: 82px;
+  object-fit: cover;
+}
+.key-features-eatures {
+  margin: 0;
+}
+.task-manager-keep {
+  margin-bottom: 0;
+}
+.task-manager-keep-track-of-as {
+  margin: 0;
+  padding-left: 31px;
+}
+.key-features-eatures-container {
+  position: absolute;
+  top: 393px;
+  left: 156px;
+  font-size: var(--font-inherit);
+  line-height: 29px;
+  font-family: var(--font-inherit);
+  display: inline-block;
+  width: 1117px;
+  height: 42px;
+}
+.select-character {
+  position: relative;
+  border-radius: 20px;
+  background-color: rgba(21, 21, 21, 0.63);
+  box-shadow: 0 0 63px 22px rgba(0, 0, 0, 0.39);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 55px;
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}
+a{
+  color: aliceblue;
+}

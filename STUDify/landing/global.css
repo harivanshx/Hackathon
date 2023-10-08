@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+  --font-inherit: inherit;
+
+  /* font sizes */
+  --font-size-4xl: 23px;
+  --font-size-xl: 20px;
+  --font-size-mid: 17px;
+  --font-size-7xl: 26px;
+
+  /* Colors */
+  --color-gray-100: #282828;
+  --color-white: #fff;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+}
